@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flutter Music Player UI Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0e0e0e;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #ffffffd9;
+    }
+
+    .video-box {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+      background: #000;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .meta {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #6b46c1;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 12px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #7c3aed;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Flutter Music Player UI — Demo Video</h1>
+
+    <div class="video-box">
+      <!-- Make sure your video file is in the same folder -->
+      <video controls preload="metadata" poster="poster.jpg">
+        <source src="Flutter Project.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="meta">
+      <p>Project Demo • Music Player UI</p>
+      <a class="btn" href="Flutter Project.mp4" download>Download Video</a>
+    </div>
+  </div>
+</body>
+</html>
